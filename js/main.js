@@ -120,9 +120,10 @@ function initMobileMenu() {
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
+  const dockItems = document.querySelectorAll('.main-bottom-nav__item');
 
   const onScroll = () => {
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 140;
 
     sections.forEach((section) => {
       const top = section.offsetTop;
@@ -134,6 +135,13 @@ function initScrollSpy() {
           link.classList.remove('active');
           if (link.getAttribute('href') === `#${id}`) {
             link.classList.add('active');
+          }
+        });
+
+        dockItems.forEach((item) => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === `#${id}`) {
+            item.classList.add('active');
           }
         });
       }
@@ -207,8 +215,8 @@ function initSkillProgress() {
    7. Skill Category Filter
    ========================================================================== */
 function initSkillFilter() {
-  const filterBtns = document.querySelectorAll('#skills .filter-btn');
-  const skillCards = document.querySelectorAll('#skills .skill-card');
+  const filterBtns = document.querySelectorAll('#skills .filter-tab, #skills .filter-btn');
+  const skillCards = document.querySelectorAll('#skills .arsenal-card, #skills .skill-card');
 
   if (filterBtns.length === 0 || skillCards.length === 0) return;
 

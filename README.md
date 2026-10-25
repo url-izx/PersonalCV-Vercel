@@ -24,10 +24,10 @@ A modern, responsive, and interactive Personal Curriculum Vitae (CV) and develop
 
 ## 🛠️ Technologies Used
 - **Frontend Core:** HTML5 (Semantic Structure, Accessible Landmarks, SEO Tags)
-- **Styling:** Vanilla CSS3 (Custom Design System, CSS Variables, Glassmorphism, Flexbox, CSS Grid)
+- **Styling:** Vanilla CSS3 (Editorial Brutalist Design System inspired by Franze Calleja, CSS Variables, Theme Tokens, Flexbox, CSS Grid)
 - **Logic & Interactivity:** Vanilla JavaScript (ES6+, IntersectionObserver, DOM Manipulation, LocalStorage)
 - **Backend Handler:** PHP 8 (`backend/contact.php` for form validation, sanitization, and logging)
-- **Icons & Typography:** Font Awesome 6, Google Fonts (`Outfit` & `Plus Jakarta Sans`)
+- **Icons & Typography:** Font Awesome 6, Google Fonts (`Geist`, `Geist Mono`, `Plus Jakarta Sans`, `JetBrains Mono`)
 - **Version Control & Hosting:** Git, GitHub, Vercel
 
 ---
