@@ -207,8 +207,8 @@ function initSkillProgress() {
    7. Skill Category Filter
    ========================================================================== */
 function initSkillFilter() {
-  const filterBtns = document.querySelectorAll('.skills-filter-wrapper .filter-btn');
-  const skillCards = document.querySelectorAll('.skill-card');
+  const filterBtns = document.querySelectorAll('#skills .filter-btn');
+  const skillCards = document.querySelectorAll('#skills .skill-card');
 
   if (filterBtns.length === 0 || skillCards.length === 0) return;
 
@@ -243,8 +243,8 @@ function initSkillFilter() {
    8. Projects Filter
    ========================================================================== */
 function initProjectFilter() {
-  const filterBtns = document.querySelectorAll('.project-filters .filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const filterBtns = document.querySelectorAll('#projects .filter-btn');
+  const projectCards = document.querySelectorAll('#projects .project-card');
 
   if (filterBtns.length === 0 || projectCards.length === 0) return;
 
@@ -280,69 +280,21 @@ function initProjectFilter() {
    ========================================================================== */
 const projectDetailsData = {
   1: {
-    title: 'DNSC Student Information & Academic Portal',
-    category: 'Full Stack Academic System',
-    image: 'assets/images/project-dnsc.jpg',
+    title: 'QUESTLEARN: A REINFORCEMENT-BASED GAMIFIED LEARNING PATTERN ANALYSIS SYSTEM FOR ELEMENTARY ENGLISH BASED ON NATG6 STANDARDIZED ASSESSMENTS',
+    category: 'BSIT Flagship Academic Capstone Research',
+    image: 'assets/images/questlearn.png',
     description:
-      'A comprehensive web application designed for Davao del Norte State College students and instructors. Built using PHP, MySQL, and vanilla JavaScript, it facilitates student course pre-enrollment, real-time GPA trend computation, exam schedules, and curriculum checklist auditing.',
-    technologies: ['PHP', 'MySQL', 'JavaScript (ES6)', 'HTML5', 'CSS3', 'Chart.js'],
+      'An educational technology web platform engineered for elementary English education at Davao del Norte State College. It combines reinforcement-based gamified pedagogical mechanics with real-time student learning pattern analysis, benchmarked against National Achievement Test Grade 6 (NATG6) standardized competencies.',
+    technologies: ['PHP', 'MySQL', 'JavaScript (ES6)', 'HTML5', 'CSS3', 'Pattern Analytics', 'Gamification Engine'],
     features: [
-      'Automated prerequisite validation engine preventing invalid enrollments',
-      'Interactive student dashboard with GPA calculations & academic milestones',
-      'Instructor module for grading submissions and attendance reporting',
-      'Responsive design tested on mobile phones, tablets, and desktop workstations',
-      'Robust SQL injection prevention with prepared PDO statements'
+      'Reinforcement-based gamified quest progression, challenge levels, and achievement rewards',
+      'Automated assessment modules directly mapped to NATG6 elementary English standards',
+      'Intelligent learning pattern detection tracking student error tendencies, completion times, and concept retention',
+      'Centralized educator & administrator portal for student performance evaluation and report generation',
+      'Robust relational database architecture with prepared PDO queries and responsive multi-device interface'
     ],
-    github: 'https://github.com/url-izx/PersonalCV-Vercel',
-    demo: '#'
-  },
-  2: {
-    title: 'BarangayConnect - Resident Records & E-Services',
-    category: 'E-Governance & Community System',
-    image: 'assets/images/project-barangay.jpg',
-    description:
-      'An automated barangay administrative platform developed to eliminate paper-based record-keeping in local government units. Features family profiling, automated barangay clearance/residency certificate issuance, and incident blotter tracking.',
-    technologies: ['PHP 8', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'FPDF Library'],
-    features: [
-      'Resident census registry with Purok categorization and verified ID badges',
-      'One-click Barangay Clearance & Certificate of Indigency PDF generation',
-      'Role-based access control for Barangay Captain, Secretary, and Staff',
-      'Real-time search and filter with instant status indicators'
-    ],
-    github: 'https://github.com/url-izx/PersonalCV-Vercel',
-    demo: '#'
-  },
-  3: {
-    title: 'Aura POS & Smart Inventory System',
-    category: 'Web App & Inventory Management',
-    image: 'assets/images/project-inventory.jpg',
-    description:
-      'A high-performance modern Point-of-Sale and inventory management application. Tailored for small to medium enterprises with automated low-stock notifications, transaction logs, receipt generator, and daily sales metrics.',
-    technologies: ['HTML5', 'CSS3 (Flexbox/Grid)', 'JavaScript', 'PHP REST API', 'MySQL'],
-    features: [
-      'Interactive product catalog grid with instant search and category tags',
-      'Real-time automated stock level calculation and threshold alerts',
-      'Thermal receipt preview modal with one-click print and email dispatch',
-      'Interactive sales performance trend visualization'
-    ],
-    github: 'https://github.com/url-izx/PersonalCV-Vercel',
-    demo: '#'
-  },
-  4: {
-    title: 'Personal CV & Developer Portfolio (Vercel Edition)',
-    category: 'Portfolio & Curriculum Vitae',
-    image: 'assets/images/project-dnsc.jpg',
-    description:
-      'An interactive, accessible, and responsive personal CV web application deployed on Vercel. Features sleek dark/light theme switching, animated skill bars, project modal popups, and full print-to-PDF support.',
-    technologies: ['HTML5', 'Vanilla CSS3', 'JavaScript', 'PHP Backend', 'Vercel Deployment'],
-    features: [
-      'Zero-dependency modern Vanilla CSS design system with fluid layout',
-      'Dynamic dark/light mode toggle stored in browser localStorage',
-      'Optimized print stylesheet for instant clean CV export',
-      'Live deployment ready on Vercel'
-    ],
-    github: 'https://github.com/url-izx/PersonalCV-Vercel',
-    demo: 'https://github.com/url-izx/PersonalCV-Vercel'
+    github: 'https://github.com/gentilesjaydev/questlearnadmin',
+    demo: 'https://github.com/gentilesjaydev/questlearnadmin'
   }
 };
 
@@ -544,10 +496,26 @@ function initBackToTop() {
    ========================================================================== */
 function initPrintButton() {
   const printBtns = document.querySelectorAll('.btn-print-cv');
+
+  const prepareForPrint = () => {
+    // Reveal all elements and fill progress bars before printing
+    document.querySelectorAll('.fade-up').forEach((el) => {
+      el.classList.add('visible');
+    });
+    document.querySelectorAll('.progress-bar-fill').forEach((bar) => {
+      bar.style.width = `${bar.getAttribute('data-progress') || 80}%`;
+    });
+  };
+
+  window.addEventListener('beforeprint', prepareForPrint);
+
   printBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      window.print();
+      prepareForPrint();
+      setTimeout(() => {
+        window.print();
+      }, 80);
     });
   });
 }

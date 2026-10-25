@@ -36,17 +36,13 @@ A modern, responsive, and interactive Personal Curriculum Vitae (CV) and develop
 1. **Personal Profile**: Full name, career title, professional portrait photo, personal intro, and career objective.
 2. **Basic Information**: Location (Panabo / Davao del Norte), email address with one-click copy, contact phone, personal summary, and career interests.
 3. **Education**: Davao del Norte State College (BSIT 4th Year) & Southern Davao National High School with academic achievements and milestones.
-4. **Technical & Professional Skills**: HTML, CSS, JavaScript, Web Development, PHP, MySQL Database Management, Git & GitHub, UI/UX Design, Problem Solving, and Team Communication with animated progress indicators and category filters.
-5. **Projects**: Featured web systems with previews, tech stacks, repository links, and interactive modal details:
-   - *DNSC Student Information & Academic Portal*
-   - *BarangayConnect: Resident Records Management System*
-   - *Aura POS & Smart Inventory System*
-   - *Personal CV & Developer Portfolio*
+4. **Technical & Professional Skills**: HTML5, CSS3, JavaScript (ES6+), Web Development, PHP, MySQL Database Management, and UI/UX Design with animated progress indicators and category filters.
+5. **Projects**: Flagship Academic Capstone System — [QUESTLEARN: A Reinforcement-Based Gamified Learning Pattern Analysis System for Elementary English Based on NATG6 Standardized Assessments](https://github.com/gentilesjaydev/questlearnadmin) (PHP, MySQL, JavaScript, HTML5/CSS3, Learning Pattern Analytics).
 6. **GitHub Profile**: Working link to [@url-izx](https://github.com/url-izx) with quick repo highlights.
-7. **LinkedIn Profile**: Dedicated professional spotlight card for recruiter connections.
-8. **Social Media Links**: Facebook, Instagram, LinkedIn, GitHub, and direct email channels.
-9. **Achievements & Certifications**: Dean's Honor recognition, Web Development Bootcamp certificate, Git seminar, and Hackathon participation.
-10. **Experience**: Capstone Project Lead, IT Department Student Assistant, Freelance Web Developer, and SITS organizational involvement.
+7. **LinkedIn Profile**: Dedicated professional spotlight card linking to [Earl Masana LinkedIn](https://www.linkedin.com/in/earl-masana-46a846415/?isSelfProfile=true).
+8. **Social Media Links**: Facebook ([Earlezzz](https://www.facebook.com/Earlezzz)), Instagram ([@url.izx](https://www.instagram.com/url.izx/)), LinkedIn, GitHub, and direct email channels.
+9. **Achievements & Certifications**: Verified Certificate of Completion for the Advanced Seminar Series: *“BSIT 413 Series Training: Artificial Intelligence for Innovation of Capstone Project”* at Davao del Norte State College (September 28–29, 2026).
+10. **Experience**: Lead Web Developer & System Analyst for the BSIT Academic Capstone Project at Davao del Norte State College.
 
 ---
 
