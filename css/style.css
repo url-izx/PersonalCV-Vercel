@@ -207,9 +207,11 @@ button {
   justify-content: space-between;
   height: var(--nav-height);
   width: 100%;
-  max-width: 100%;
-  padding-left: clamp(12px, 2.5vw, 36px);
-  padding-right: clamp(12px, 2.5vw, 36px);
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(14px, 3vw, 40px);
+  padding-right: clamp(14px, 3vw, 40px);
   gap: clamp(8px, 1.2vw, 18px);
 }
 
