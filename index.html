@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earl Laurence R. Masana | Web Developer & BSIT Senior Portfolio CV</title>
+  <meta name="description" content="Personal CV and Developer Portfolio of Earl Laurence R. Masana, 4th Year BSIT Student at Davao del Norte State College specializing in Web Development, PHP, JavaScript, and Modern UI/UX.">
+  <meta name="keywords" content="Earl Laurence Masana, Web Developer, BSIT, Davao del Norte State College, DNSC, PHP, JavaScript, HTML, CSS, Portfolio, Personal CV, Vercel">
+  <meta name="author" content="Earl Laurence R. Masana">
+
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Earl Laurence R. Masana - Personal CV & Portfolio">
+  <meta property="og:description" content="Explore my projects, technical skills, academic background at Davao del Norte State College, and web development experience.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="topNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Earl Laurence Masana Home">
+        <div class="logo-badge">EM</div>
+        <span>Earl<span style="color: var(--primary);">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">About</a>
+        <a href="#basic-info" class="nav-link">Basic Info</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#social-hub" class="nav-link">Connect</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="btn btn-secondary btn-sm btn-print-cv btn-download-desktop" title="Print or save as PDF">
+          <i class="fa-solid fa-print"></i> Print CV
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm btn-download-desktop">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me
+        </a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" id="mobileDrawer">
+    <a href="#hero" class="mobile-nav-link"><span>About</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#basic-info" class="mobile-nav-link"><span>Basic Info</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#education" class="mobile-nav-link"><span>Education</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#skills" class="mobile-nav-link"><span>Skills</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#projects" class="mobile-nav-link"><span>Projects</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#social-hub" class="mobile-nav-link"><span>Online Presence</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#achievements" class="mobile-nav-link"><span>Achievements</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#experience" class="mobile-nav-link"><span>Experience</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#contact" class="mobile-nav-link"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+      <button class="btn btn-secondary btn-sm btn-print-cv" style="flex: 1;">
+        <i class="fa-solid fa-print"></i> Print CV
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm" style="flex: 1;">
+        <i class="fa-solid fa-paper-plane"></i> Get in Touch
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =======================================================================
+         SECTION 1: PERSONAL PROFILE (HERO)
+         ======================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Profile Information -->
+        <div class="hero-content fade-up">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Available for OJT & Junior Web Developer Opportunities</span>
+          </div>
+
+          <div class="hero-greeting">MABUHAY! WELCOME TO MY CV WEBSITE</div>
+
+          <h1 class="hero-name">
+            Earl Laurence <br><span class="gradient-text">R. Masana</span>
+          </h1>
+
+          <div class="hero-title-box">
+            <span class="hero-title">Web Developer</span>
+            <span class="title-badge">BSIT Senior</span>
+            <span class="title-badge">Davao del Norte State College</span>
+          </div>
+
+          <p class="hero-intro">
+            A passionate, solution-driven 4th-year Bachelor of Science in Information Technology (BSIT) student from Davao del Norte State College. Focused on building responsive, performant, and user-centered web applications utilizing modern HTML, CSS, JavaScript, and PHP.
+          </p>
+
+          <!-- Career Objective Box -->
+          <div class="career-objective-card">
+            <div class="objective-heading">
+              <i class="fa-solid fa-bullseye"></i> Career Objective
+            </div>
+            <p>
+              To secure a challenging web development or IT position where I can apply my proficiency in full-stack fundamentals, modern frontend design, and backend systems while actively learning enterprise architectures, contributing to innovative digital solutions, and growing as a software engineer.
+            </p>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-laptop-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+            <button class="btn btn-outline btn-print-cv" title="Print or save as PDF">
+              <i class="fa-solid fa-file-arrow-down"></i> Save CV (PDF)
+            </button>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-social-links">
+            <a href="https://github.com/url-izx" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/earl-masana" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:earlmasana1@gmail.com" class="social-icon-btn" title="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Visual Card -->
+        <div class="hero-visual fade-up">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            
+            <!-- Floating Chip 1: Education -->
+            <div class="floating-chip chip-1">
+              <div class="chip-icon school">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="chip-text">
+                <h4>DNSC BSIT</h4>
+                <p>4th Year Senior</p>
+              </div>
+            </div>
+
+            <!-- Profile Picture Frame -->
+            <div class="avatar-frame">
+              <img src="assets/images/profile.jpg" alt="Earl Laurence R. Masana - Professional Profile Photo" class="avatar-img" width="400" height="400">
+            </div>
+
+            <!-- Floating Chip 2: Tech Skills -->
+            <div class="floating-chip chip-2">
+              <div class="chip-icon code">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="chip-text">
+                <h4>Web Developer</h4>
+                <p>HTML • CSS • JS • PHP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 2: BASIC INFORMATION
+         ======================================================================= -->
+    <section class="section" id="basic-info">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-id-card"></i> Section 02
+          </div>
+          <h2 class="section-title">Basic <span class="gradient-text">Information</span></h2>
+          <p class="section-subtitle">
+            Overview of my current location, professional communications, personal background, and technical fields of interest.
+          </p>
+        </div>
+
+        <div class="basic-info-grid">
+          <!-- Card 1: Location -->
+          <div class="info-card fade-up">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h3>Location</h3>
+              <p class="info-val">Panabo City / Davao del Norte</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Davao Region (Region XI), Philippines</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Email -->
+          <div class="info-card cyan fade-up">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <div>
+              <h3>Email Address</h3>
+              <div class="info-copy-box">
+                <span>earlmasana1@gmail.com</span>
+                <button class="copy-btn" data-clipboard-text="earlmasana1@gmail.com" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Fastest contact channel for inquiries</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Contact Number -->
+          <div class="info-card emerald fade-up">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+              <h3>Contact Phone</h3>
+              <p class="info-val">+63 9XX XXX XXXX</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Direct mobile line available upon request</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Short Personal Description -->
+          <div class="info-card amber fade-up">
+            <div class="info-icon-wrapper">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <div>
+              <h3>Personal Description</h3>
+              <p>
+                An energetic technology enthusiast who finds genuine satisfaction in transforming complex logic into elegant web interfaces. Lifelong learner with a high attention to detail.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5: Career Interests (Spans full or 2 cols) -->
+          <div class="info-card fade-up" style="grid-column: 1 / -1;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <div class="info-icon-wrapper">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+              <div>
+                <h3 style="margin: 0;">Primary Career Interests</h3>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Specializations and domains I am actively exploring and sharpening</p>
+              </div>
+            </div>
+            <div class="tag-cloud" style="margin-top: 8px;">
+              <span class="tag-item"><i class="fa-solid fa-code"></i> Frontend Engineering</span>
+              <span class="tag-item"><i class="fa-solid fa-server"></i> Full-Stack Web Development</span>
+              <span class="tag-item"><i class="fa-solid fa-cubes"></i> Responsive UI/UX Design</span>
+              <span class="tag-item"><i class="fa-solid fa-database"></i> Database Design & Management</span>
+              <span class="tag-item"><i class="fa-solid fa-cloud-arrow-up"></i> Vercel & Cloud Deployments</span>
+              <span class="tag-item"><i class="fa-brands fa-php"></i> PHP & MySQL Backend Systems</span>
+              <span class="tag-item"><i class="fa-solid fa-shield-halved"></i> Web Accessibility & Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3: EDUCATION
+         ======================================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-graduation-cap"></i> Section 03
+          </div>
+          <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+          <p class="section-subtitle">
+            Formal education, degree program milestones, and academic achievements.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Tertiary Education -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-node">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-year">2021 — PRESENT (4TH YEAR)</span>
+                <span class="timeline-status"><i class="fa-solid fa-circle-check"></i> Enrolled & Active</span>
+              </div>
+              <h3 class="timeline-institution">Davao del Norte State College (DNSC)</h3>
+              <div class="timeline-degree">
+                <i class="fa-solid fa-award"></i> Bachelor of Science in Information Technology (BSIT)
+              </div>
+              <p class="timeline-desc">
+                Current 4th Year Senior Student specializing in software systems development, database administration, information security, and web technologies. Leading technical implementation for our BSIT Capstone research.
+              </p>
+              <div class="timeline-achievements">
+                <h5>Relevant Academic Achievements & Involvements</h5>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i> Candidate for Dean's Honors List Recognition</li>
+                  <li><i class="fa-solid fa-star"></i> Lead Web Developer for Academic Capstone System Project</li>
+                  <li><i class="fa-solid fa-star"></i> Active Member, DNSC Society of Information Technology Students (SITS)</li>
+                  <li><i class="fa-solid fa-star"></i> Completed intensive college coursework in Systems Analysis, Web Systems, and Database Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary / Senior High School -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-node">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-year">COMPLETED</span>
+                <span class="timeline-status" style="color: var(--secondary);"><i class="fa-solid fa-circle-check"></i> Graduate</span>
+              </div>
+              <h3 class="timeline-institution">Southern Davao National High School</h3>
+              <div class="timeline-degree">
+                <i class="fa-solid fa-certificate"></i> Senior High School Diploma (Technical-Vocational-Livelihood / ICT Track)
+              </div>
+              <p class="timeline-desc">
+                Built solid foundational knowledge in computer hardware, basic programming concepts, and web technology principles.
+              </p>
+              <div class="timeline-achievements">
+                <h5>Relevant Academic Achievements</h5>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i> Graduated with Academic Honors</li>
+                  <li><i class="fa-solid fa-star"></i> Consistent Participant in School Science, Math & Tech Expositions</li>
+                  <li><i class="fa-solid fa-star"></i> Distinction in Computer Programming and Web Development Foundations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4: TECHNICAL AND PROFESSIONAL SKILLS
+         ======================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-gears"></i> Section 04
+          </div>
+          <h2 class="section-title">Technical & <span class="gradient-text">Professional Skills</span></h2>
+          <p class="section-subtitle">
+            A comprehensive breakdown of programming languages, frameworks, web technologies, and soft skills with animated proficiency indicators.
+          </p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-wrapper fade-up">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend & DB</button>
+          <button class="filter-btn" data-filter="tools">Tools & DevOps</button>
+          <button class="filter-btn" data-filter="professional">Professional / Soft</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill: HTML5 -->
+          <div class="skill-card fade-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                <div>
+                  <h4 class="skill-name">HTML5</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Semantic Structure & SEO</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">95%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="95"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="skill-card fade-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #38bdf8;"><i class="fa-brands fa-css3-alt"></i></div>
+                <div>
+                  <h4 class="skill-name">CSS3</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Flexbox, Grid & Animations</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">90%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="90"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card fade-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #facc15;"><i class="fa-brands fa-js"></i></div>
+                <div>
+                  <h4 class="skill-name">JavaScript (ES6+)</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">DOM, Async/Await & APIs</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">85%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Web Development -->
+          <div class="skill-card fade-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #6366f1;"><i class="fa-solid fa-globe"></i></div>
+                <div>
+                  <h4 class="skill-name">Web Development</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Responsive & Accessible Web</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">92%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="92"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: PHP -->
+          <div class="skill-card fade-up" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #818cf8;"><i class="fa-brands fa-php"></i></div>
+                <div>
+                  <h4 class="skill-name">PHP</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">OOP & Server-Side Logic</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">82%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="82"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Database Management (MySQL) -->
+          <div class="skill-card fade-up" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #06b6d4;"><i class="fa-solid fa-database"></i></div>
+                <div>
+                  <h4 class="skill-name">Database Management</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">MySQL, SQL Queries & Schemas</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">80%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card fade-up" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #f43f5e;"><i class="fa-brands fa-git-alt"></i></div>
+                <div>
+                  <h4 class="skill-name">Git & GitHub</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Branching & Collaboration</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">88%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="88"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: UI/UX Design -->
+          <div class="skill-card fade-up" data-category="professional">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #a855f7;"><i class="fa-solid fa-palette"></i></div>
+                <div>
+                  <h4 class="skill-name">UI/UX Design</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Figma, Layouts & Usability</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">80%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Problem Solving -->
+          <div class="skill-card fade-up" data-category="professional">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #10b981;"><i class="fa-solid fa-lightbulb"></i></div>
+                <div>
+                  <h4 class="skill-name">Problem Solving</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Debugging & Logical Analysis</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">85%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Communication & Teamwork -->
+          <div class="skill-card fade-up" data-category="professional">
+            <div class="skill-card-top">
+              <div class="skill-info-left">
+                <div class="skill-icon" style="color: #f59e0b;"><i class="fa-solid fa-people-group"></i></div>
+                <div>
+                  <h4 class="skill-name">Communication & Teamwork</h4>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Agile & Collaborative Work</span>
+                </div>
+              </div>
+              <span class="skill-level-badge">90%</span>
+            </div>
+            <div class="skill-progress-box">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" data-progress="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 5: PROJECTS
+         ======================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-code-branch"></i> Section 05
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Selection of real-world academic, e-governance, and software solutions created using PHP, MySQL, JavaScript, HTML5, and CSS3.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="skills-filter-wrapper project-filters fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web-apps">Web Applications</button>
+          <button class="filter-btn" data-filter="academic">Academic & School</button>
+          <button class="filter-btn" data-filter="php-mysql">PHP & MySQL</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: DNSC Portal -->
+          <article class="project-card fade-up" data-tags="academic php-mysql web-apps">
+            <div class="project-thumbnail">
+              <span class="project-badge-tag">Academic Capstone</span>
+              <img src="assets/images/project-dnsc.jpg" alt="DNSC Student Information and Academic Portal Preview" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">DNSC Student Information & Academic Portal</h3>
+              <p class="project-desc">
+                An integrated student portal designed for Davao del Norte State College. Provides curriculum checklist evaluation, automated prerequisite checking, real-time GPA trends, and online course pre-enrollment.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">HTML5/CSS3</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-project-modal" data-project-id="1">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="View GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="Live Preview">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Barangay Records System -->
+          <article class="project-card fade-up" data-tags="php-mysql web-apps">
+            <div class="project-thumbnail">
+              <span class="project-badge-tag">E-Governance System</span>
+              <img src="assets/images/project-barangay.jpg" alt="Barangay Resident Records Management Preview" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">BarangayConnect: Records & E-Clearance System</h3>
+              <p class="project-desc">
+                A localized municipal management platform digitizing resident census records, Purok listings, and instant PDF issuance of Barangay Clearances, Indigency, and Residency certifications.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">PHP 8</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">Vanilla JS</span>
+                <span class="tech-pill">FPDF</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-project-modal" data-project-id="2">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="View GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: POS & Smart Inventory -->
+          <article class="project-card fade-up" data-tags="web-apps php-mysql">
+            <div class="project-thumbnail">
+              <span class="project-badge-tag">Commerce & Analytics</span>
+              <img src="assets/images/project-inventory.jpg" alt="Aura POS and Inventory Management UI" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Aura POS & Smart Inventory Management</h3>
+              <p class="project-desc">
+                High-performance retail sales terminal and real-time stock tracker featuring low-stock alerts, thermal receipt printing, daily revenue graphs, and product barcode search.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3 Grid</span>
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">PHP API</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-project-modal" data-project-id="3">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="View GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Personal CV (Vercel) -->
+          <article class="project-card fade-up" data-tags="academic web-apps">
+            <div class="project-thumbnail">
+              <span class="project-badge-tag">Portfolio & Deployment</span>
+              <img src="assets/images/project-dnsc.jpg" alt="Personal CV Vercel Web Application Preview" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal CV & Developer Portfolio</h3>
+              <p class="project-desc">
+                The current interactive CV web application engineered with modern Vanilla CSS, responsive layout, dark/light theme switching, and deployed on Vercel with structured GitHub commit history.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">Vanilla CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+              <div class="project-footer-actions">
+                <button class="btn btn-primary btn-sm open-project-modal" data-project-id="4">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="View GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="social-icon-btn btn-sm" title="Live Vercel Site">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTIONS 6, 7 & 8: GITHUB, LINKEDIN & SOCIAL MEDIA HUB
+         ======================================================================= -->
+    <section class="section" id="social-hub">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-share-nodes"></i> Sections 06, 07 & 08
+          </div>
+          <h2 class="section-title">Online <span class="gradient-text">Presence & Profiles</span></h2>
+          <p class="section-subtitle">
+            Connect with me across GitHub, LinkedIn, and professional social platforms.
+          </p>
+        </div>
+
+        <div class="social-hub-grid">
+          <!-- Card 1: Section 6 - GitHub Profile -->
+          <div class="hub-card github fade-up">
+            <div class="hub-card-header">
+              <div class="hub-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span class="timeline-year">OPEN SOURCE</span>
+            </div>
+            <h3>GitHub Profile</h3>
+            <p>
+              Explore my repositories, code commits, academic programming assignments, and ongoing open-source development projects on GitHub.
+            </p>
+            <div style="background: var(--bg-tertiary); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); font-family: var(--font-code); font-size: 0.88rem;">
+              <i class="fa-solid fa-terminal" style="color: var(--secondary);"></i> github.com/url-izx
+            </div>
+            <a href="https://github.com/url-izx" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: auto;">
+              <i class="fa-brands fa-github"></i> Visit GitHub Profile
+            </a>
+          </div>
+
+          <!-- Card 2: Section 7 - LinkedIn Profile -->
+          <div class="hub-card linkedin fade-up">
+            <div class="hub-card-header">
+              <div class="hub-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <span class="timeline-year" style="color: #0a66c2; background: rgba(10, 102, 194, 0.1);">PROFESSIONAL</span>
+            </div>
+            <h3>LinkedIn Profile</h3>
+            <p>
+              Connect with me on LinkedIn to review my professional endorsements, BSIT academic journey, skills network, and career opportunities.
+            </p>
+            <div style="background: var(--bg-tertiary); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); font-family: var(--font-code); font-size: 0.88rem;">
+              <i class="fa-solid fa-user-tie" style="color: #0a66c2;"></i> linkedin.com/in/earl-masana
+            </div>
+            <a href="https://linkedin.com/in/earl-masana" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top: auto;">
+              <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+            </a>
+          </div>
+
+          <!-- Card 3: Section 8 - Social Media Links -->
+          <div class="hub-card socials fade-up">
+            <div class="hub-card-header">
+              <div class="hub-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <span class="timeline-year">COMMUNITIES</span>
+            </div>
+            <h3>Social Media & Direct Channels</h3>
+            <p>
+              Reach out across social media channels for networking, academic discussions, or web design collaborations:
+            </p>
+            <div class="social-buttons-row">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Facebook">
+                <i class="fa-brands fa-facebook" style="color: #1877f2;"></i> Facebook
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Instagram">
+                <i class="fa-brands fa-instagram" style="color: #e4405f;"></i> Instagram
+              </a>
+              <a href="mailto:earlmasana1@gmail.com" class="btn btn-secondary btn-sm" title="Email">
+                <i class="fa-solid fa-envelope" style="color: var(--secondary);"></i> Email
+              </a>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="margin-top: auto;">
+              <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 9: ACHIEVEMENTS AND CERTIFICATIONS
+         ======================================================================= -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-trophy"></i> Section 09
+          </div>
+          <h2 class="section-title">Achievements & <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">
+            Honors, official training certificates, competitions, and seminars completed during my BSIT degree.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Item 1 -->
+          <div class="achievement-card fade-up">
+            <div class="achievement-icon-box">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="achievement-details">
+              <span class="achievement-date">DNSC Academic Award</span>
+              <h4 class="achievement-title">Dean's Honors List Candidate</h4>
+              <span class="achievement-org">Davao del Norte State College</span>
+              <p class="achievement-desc">Recognized for sustained high scholastic performance in the BSIT program.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="achievement-card fade-up">
+            <div class="achievement-icon-box" style="background: rgba(99, 102, 241, 0.12); color: var(--primary);">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="achievement-details">
+              <span class="achievement-date">Web Development Seminar</span>
+              <h4 class="achievement-title">Modern Full-Stack Web Development</h4>
+              <span class="achievement-org">DNSC IT Society Technical Workshop</span>
+              <p class="achievement-desc">Comprehensive training in modern responsive web architecture, REST APIs, and PHP backends.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="achievement-card fade-up">
+            <div class="achievement-icon-box" style="background: rgba(6, 182, 212, 0.12); color: var(--secondary);">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div class="achievement-details">
+              <span class="achievement-date">Version Control Workshop</span>
+              <h4 class="achievement-title">Git & GitHub Essentials for Developers</h4>
+              <span class="achievement-org">Philippine Open Source Community</span>
+              <p class="achievement-desc">Practical mastery in commit hygiene, pull requests, resolving merge conflicts, and team workflows.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="achievement-card fade-up">
+            <div class="achievement-icon-box" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="achievement-details">
+              <span class="achievement-date">Competition Participant</span>
+              <h4 class="achievement-title">DNSC IT Days Code Challenge</h4>
+              <span class="achievement-org">Institute of Computing - DNSC</span>
+              <p class="achievement-desc">Competed in rapid web programming and algorithmic problem-solving against peer IT teams.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="achievement-card fade-up">
+            <div class="achievement-icon-box" style="background: rgba(168, 85, 247, 0.12); color: var(--accent-purple);">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <div class="achievement-details">
+              <span class="achievement-date">Seminar Certification</span>
+              <h4 class="achievement-title">Cybersecurity & Data Privacy (RA 10173)</h4>
+              <span class="achievement-org">National Privacy Commission / DNSC</span>
+              <p class="achievement-desc">Completed seminar on protecting resident data, secure input sanitization, and compliance.</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="achievement-card fade-up">
+            <div class="achievement-icon-box" style="background: rgba(244, 63, 94, 0.12); color: #f43f5e;">
+              <i class="fa-solid fa-users-rectangle"></i>
+            </div>
+            <div class="achievement-details">
+              <span class="achievement-date">Student Leadership</span>
+              <h4 class="achievement-title">Active SITS Organizational Member</h4>
+              <span class="achievement-org">Society of Information Technology Students</span>
+              <p class="achievement-desc">Active organizer for college tech webinars, mentorship circles, and coding exhibitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 10: EXPERIENCE AND LEADERSHIP
+         ======================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-briefcase"></i> Section 10
+          </div>
+          <h2 class="section-title">Work & Project <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">
+            Hands-on technical roles, capstone project leadership, and freelancing track record.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Role 1: Capstone Project Lead -->
+          <div class="experience-card fade-up">
+            <span class="exp-badge-period">2023 — PRESENT (CAPSTONE RESEARCH)</span>
+            <h3 class="exp-role">Lead Web Developer & System Analyst</h3>
+            <span class="exp-org">BSIT Capstone Project • Davao del Norte State College</span>
+            <ul class="exp-duties">
+              <li><i class="fa-solid fa-chevron-right"></i> Architected the full relational database schema and web application structure for the college system.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Built modular backend PHP scripts handling authentication, course validation, and SQL queries.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Conducted user testing and UI iterations with faculty and student respondents.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2: Freelance Web Projects -->
+          <div class="experience-card fade-up">
+            <span class="exp-badge-period">2022 — PRESENT</span>
+            <h3 class="exp-role">Freelance Web Designer & Developer</h3>
+            <span class="exp-org">Independent Contractor • Local & Student Clients</span>
+            <ul class="exp-duties">
+              <li><i class="fa-solid fa-chevron-right"></i> Designed bespoke, modern landing pages and portfolio websites with HTML5, CSS3, and JavaScript.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Implemented mobile-first layouts, ensuring fast load times and cross-browser reliability.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Assisted local micro-enterprises in digitizing their inventories and contact processes.</li>
+            </ul>
+          </div>
+
+          <!-- Role 3: Student Assistant / IT Support -->
+          <div class="experience-card fade-up">
+            <span class="exp-badge-period">2022 — 2023</span>
+            <h3 class="exp-role">Student Assistant & IT Laboratory Support</h3>
+            <span class="exp-org">Institute of Computing Laboratory • DNSC</span>
+            <ul class="exp-duties">
+              <li><i class="fa-solid fa-chevron-right"></i> Assisted instructors and students in setting up local development environments (XAMPP, VS Code, Git).</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Diagnosed network connectivity, workstation OS configurations, and peripheral hardware issues.</li>
+              <li><i class="fa-solid fa-chevron-right"></i> Maintained orderly documentation of lab equipment usage and maintenance schedules.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         INTERACTIVE CONTACT & INQUIRY SECTION (WITH PHP BACKEND INTEGRATION)
+         ======================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </div>
+          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">
+            Have an open OJT position, junior developer role, or collaborative project? Leave a message below or reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Information -->
+          <div class="contact-info-panel fade-up">
+            <div class="contact-quick-item">
+              <div class="contact-quick-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0 0 4px;">Direct Email</h4>
+                <a href="mailto:earlmasana1@gmail.com" style="color: var(--primary); font-weight: 600;">earlmasana1@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-quick-item">
+              <div class="contact-quick-icon" style="color: var(--secondary); background: rgba(6, 182, 212, 0.15);">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0 0 4px;">Campus / Residence</h4>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.92rem;">
+                  Davao del Norte State College, Panabo City, Davao del Norte, Philippines
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-quick-item">
+              <div class="contact-quick-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.15);">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0 0 4px;">Response Time</h4>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.92rem;">
+                  Usually within 24 hours (PHT / GMT+8)
+                </p>
+              </div>
+            </div>
+
+            <!-- Download Button -->
+            <button class="btn btn-primary btn-print-cv" style="width: 100%;">
+              <i class="fa-solid fa-file-pdf"></i> Print / Download Complete CV
+            </button>
+          </div>
+
+          <!-- Contact Interactive Form -->
+          <div class="contact-form-card fade-up">
+            <form id="contactForm" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="senderName"><i class="fa-regular fa-user"></i> Your Name *</label>
+                  <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail"><i class="fa-regular fa-envelope"></i> Your Email *</label>
+                  <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject"><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" id="senderSubject" name="subject" class="form-control" placeholder="e.g. Junior Web Developer Opportunity / OJT Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage"><i class="fa-regular fa-message"></i> Message *</label>
+                <textarea id="senderMessage" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       PROJECT DETAILS MODAL POPUP
+       ======================================================================= -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img src="assets/images/project-dnsc.jpg" alt="Project Screenshot Preview" id="modalImg" class="modal-header-img">
+      <div class="modal-body">
+        <div>
+          <span class="timeline-year" id="modalCategory">Full Stack Academic System</span>
+          <h3 id="modalTitle" style="font-size: 1.5rem; margin-top: 8px;">Project Title</h3>
+        </div>
+        <p id="modalDesc" style="color: var(--text-secondary); line-height: 1.65;"></p>
+        
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 8px; text-transform: uppercase; color: var(--primary);">Technologies Used</h4>
+          <div class="project-tech-stack" id="modalTechStack"></div>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 8px; text-transform: uppercase; color: var(--primary);">Key Architectural Features</h4>
+          <ul class="exp-duties" id="modalFeatures"></ul>
+        </div>
+
+        <div style="display: flex; gap: 14px; margin-top: 10px;">
+          <a href="https://github.com/url-izx/PersonalCV-Vercel" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalGithubLink">
+            <i class="fa-brands fa-github"></i> View GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- =======================================================================
+       FOOTER
+       ======================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Earl Laurence R. Masana</h3>
+          <p>BSIT 4th Year Student • Davao del Norte State College • Web Developer</p>
+        </div>
+        <div class="hero-social-links">
+          <a href="https://github.com/url-izx" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/earl-masana" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:earlmasana1@gmail.com" class="social-icon-btn" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Earl Laurence R. Masana. All rights reserved. Built with HTML, CSS, JavaScript, and PHP.</p>
+        <p>Deployed on <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Vercel</a> • Hosted via GitHub</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
