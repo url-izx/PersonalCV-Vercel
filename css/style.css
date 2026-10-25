@@ -1714,14 +1714,8 @@ textarea.input-franze {
 }
 
 /* --- Responsive Media Queries --- */
-@media (max-width: 1280px) {
+@media (max-width: 640px) {
   .nav-actions .btn-desktop-only {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1040px) {
-  .nav-menu {
     display: none !important;
   }
 
