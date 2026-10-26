@@ -17,7 +17,7 @@ A modern, responsive, and interactive Personal Curriculum Vitae (CV) and develop
 ---
 
 ## 🌐 Live Deployment
-- **Live Vercel Link:** [https://personal-cv-vercel.vercel.app](https://personal-cv-vercel.vercel.app) *(or connect your repository directly via [Vercel](https://vercel.com))*
+- **Live Vercel Link:** [https://personalcv-seven.vercel.app/](https://personalcv-seven.vercel.app/)
 - **GitHub Repository:** [https://github.com/url-izx/PersonalCV-Vercel.git](https://github.com/url-izx/PersonalCV-Vercel.git)
 
 ---
